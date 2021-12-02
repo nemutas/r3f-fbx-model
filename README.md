@@ -1,46 +1,29 @@
-# Getting Started with Create React App
+# About
+**React Three Fibar**を使用して、fbxファイルのモデルとアニメーションを読み込みました。
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+https://nemutas.github.io/r3f-fbx-model/
+![スクリーンショット 2021-12-02 200122](https://user-images.githubusercontent.com/46724121/144410048-a74baf42-e6b5-44f4-af40-2510e83a94df.png)
 
-## Available Scripts
+# 3D Model
+3Dモデルは、[Mixamo](https://www.mixamo.com/)からお借りしました。
 
-In the project directory, you can run:
+* [YBot](https://www.mixamo.com/#/?page=1&query=Y&type=Character)
+* [Bellydancing](https://www.mixamo.com/#/?page=1&query=belly&type=Motion%2CMotionPack)
+* [Samba Dancing](https://www.mixamo.com/#/?page=1&query=samba&type=Motion%2CMotionPack)
+* [Goofy Running](https://www.mixamo.com/#/?page=1&query=goofy&type=Motion%2CMotionPack)
 
-### `npm start`
+# Links
+### Texture
+Materialには、Matcapテクスチャーを使用しています。
+* [MeshMatcapMaterial](https://threejs.org/docs/index.html?q=MeshMatcapMaterial#api/en/materials/MeshMatcapMaterial)
+* [useMatcapTexture](https://docs.pmnd.rs/drei/prototyping/use-matcap-texture)
+* [MatCaps](https://github.com/nidorx/matcaps)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### FBX Loader
+モデルloaderには、[@react-three/drei](https://docs.pmnd.rs/drei/introduction)の**useFBX**フックを使用しています。
+* [useFBX](https://docs.pmnd.rs/drei/loaders/use-fbx)
+* [Loading FBX models using useFBX](https://docs.pmnd.rs/react-three-fiber/tutorials/loading-models#loading-fbx-models-using-use-fbx)
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Controller
+コントローラーには、**LEVA**を使用しています。
+* [LEVA](https://github.com/pmndrs/leva)
